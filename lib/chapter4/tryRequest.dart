@@ -15,6 +15,5 @@ Future<List> getUsers() async {
 }
 
 void main(List<String> args) async {
-  var users = await getUsers();
-  print(users);
+  getUsers().then((value) => print(value));
 }
